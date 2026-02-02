@@ -28,10 +28,14 @@ export default function MobileAppContent() {
     appHeroBannerStyle,
     appProductCardStyle,
     colors,
+    font,
   } = useThemeStore();
 
   return (
-    <div className="flex flex-col w-full min-h-full font-cairo">
+    <div
+      className="flex flex-col w-full min-h-full"
+      style={{ fontFamily: `"${font}", sans-serif` }}
+    >
       {/* top header */}
       {appHeaderStyle === "header-one" && <AppHeaderOne />}
       {appHeaderStyle === "header-two" && <AppHeaderTwo />}

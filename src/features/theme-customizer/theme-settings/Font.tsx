@@ -9,13 +9,18 @@ import { useTranslation } from "react-i18next";
 import { useThemeStore } from "../theme-logic/appStore";
 
 const fonts = [
-  { value: "Poppins", label: "Poppins" },
-  { value: "Inter", label: "Inter" },
-  { value: "Roboto", label: "Roboto" },
-  { value: "Arial", label: "Arial" },
-  { value: "Verdana", label: "Verdana" },
-  { value: "Times New Roman", label: "Times New Roman" },
-  { value: "Georgia", label: "Georgia" },
+  { value: "Rubik", label: "Rubik" },
+  { value: "Cairo", label: "Cairo" },
+  { value: "Tajawal", label: "Tajawal" },
+  { value: "Almarai", label: "Almarai" },
+  { value: "Noto Sans Arabic", label: "Noto Sans Arabic" },
+  { value: "IBM Plex Sans Arabic", label: "IBM Plex Sans Arabic" },
+  { value: "Noto Kufi Arabic", label: "Noto Kufi Arabic" },
+  { value: "Changa", label: "Changa" },
+  { value: "Amiri", label: "Amiri" },
+  { value: "Noto Naskh Arabic", label: "Noto Naskh Arabic" },
+  { value: "El Messiri", label: "El Messiri" },
+  { value: "Mada", label: "Mada" },
 ];
 
 export default function Font() {

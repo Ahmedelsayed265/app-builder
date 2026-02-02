@@ -36,7 +36,7 @@ export const useThemeStore = create<ThemeState>()(
   persist(
     (set) => ({
       colors: initialColors,
-      font: "",
+      font: "Cairo",
       buttonShape: "rounded",
       appBarStyle: "",
       appHeaderStyle: "",
