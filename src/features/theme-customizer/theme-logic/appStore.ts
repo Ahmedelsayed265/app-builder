@@ -36,13 +36,13 @@ export const useThemeStore = create<ThemeState>()(
   persist(
     (set) => ({
       colors: initialColors,
-      font: "Poppins",
+      font: "",
       buttonShape: "rounded",
-      appBarStyle: "bar-one",
-      appHeaderStyle: "header-one",
-      appCategoriesStyle: "categories-one",
-      appHeroBannerStyle: "banner-one",
-      appProductCardStyle: "card-one",
+      appBarStyle: "",
+      appHeaderStyle: "",
+      appCategoriesStyle: "",
+      appHeroBannerStyle: "",
+      appProductCardStyle: "",
 
       setColor: (name, value) =>
         set((state) => ({

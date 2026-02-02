@@ -40,7 +40,7 @@ export default function HeroBannerOne() {
         </Swiper>
 
         <div
-          className="absolute right-0! bottom-0! w-fit! py-1 px-2 z-10 rounded-tl-[8px] banner_one_swiper"
+          className="absolute right-0! bottom-0! w-fit! py-1 px-2 z-10 rounded-tl-[12px] banner_one_swiper"
           style={{ backgroundColor: colors.app_bg }}
           ref={setPaginationEl}
         />

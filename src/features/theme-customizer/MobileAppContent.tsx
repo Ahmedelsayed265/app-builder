@@ -51,29 +51,31 @@ export default function MobileAppContent() {
       {appCategoriesStyle === "categories-four" && <AppCategoriesFour />}
 
       {/* Products Grid */}
-      <div className="px-5 py-4">
-        <div className="flex items-center justify-between mb-4">
-          <h3 className="text-[#161616] text-[16px] font-bold">
-            الأكثر مبيعاً
-          </h3>
-          <button
-            className="underline text-sm"
-            style={{ color: colors.primary }}
-          >
-            عرض الكل
-          </button>
-        </div>
+      {appProductCardStyle && (
+        <div className="px-5 py-4">
+          <div className="flex items-center justify-between mb-4">
+            <h3 className="text-[#161616] text-[16px] font-bold">
+              الأكثر مبيعاً
+            </h3>
+            <button
+              className="underline text-sm"
+              style={{ color: colors.primary }}
+            >
+              عرض الكل
+            </button>
+          </div>
 
-        <div className="flex flex-col gap-2">
-          {[1, 2, 3, 4].map((i) => (
-            <Fragment key={i}>
-              {appProductCardStyle === "card-one" && <ProductCardOne />}
-              {appProductCardStyle === "card-two" && <ProductCardTwo />}
-              {appProductCardStyle === "card-three" && <ProductCardThree />}
-            </Fragment>
-          ))}
+          <div className="flex flex-col gap-2">
+            {[1, 2, 3, 4].map((i) => (
+              <Fragment key={i}>
+                {appProductCardStyle === "card-one" && <ProductCardOne />}
+                {appProductCardStyle === "card-two" && <ProductCardTwo />}
+                {appProductCardStyle === "card-three" && <ProductCardThree />}
+              </Fragment>
+            ))}
+          </div>
         </div>
-      </div>
+      )}
 
       <div className="h-20" />
 

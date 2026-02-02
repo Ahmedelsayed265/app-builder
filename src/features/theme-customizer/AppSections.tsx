@@ -115,7 +115,7 @@ export default function AppSections() {
           </AccordionTrigger>
 
           <AccordionContent className="flex flex-col gap-4 px-4 py-2 min-w-0">
-            <ScrollArea className="h-64 w-full pl-4 min-w-0">
+            <ScrollArea className="h-80 w-full pl-4 min-w-0">
               <AppProductCard />
             </ScrollArea>
           </AccordionContent>
