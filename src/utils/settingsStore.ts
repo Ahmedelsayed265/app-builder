@@ -1,0 +1,14 @@
+import { create } from "zustand";
+
+interface SettingsState {
+  lang: string;
+}
+
+export const useSettingsStore = create<SettingsState>()((set) => ({
+  lang: localStorage.getItem("i18nextLng") || "ar",
+
+  setLanguage: (lang: string) => {
+    localStorage.setItem("i18nextLng", lang);
+    set({ lang });
+  },
+}));
