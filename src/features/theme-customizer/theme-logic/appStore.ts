@@ -3,6 +3,7 @@ import { persist } from "zustand/middleware";
 import { colors_fields } from "@/utils/constants";
 
 export type ButtonShape = "rounded" | "square" | "sharp";
+export type Page = "home" | "categories" | "product-details" | "cart";
 
 interface ThemeState {
   font: string;
@@ -13,6 +14,7 @@ interface ThemeState {
   appCategoriesStyle: string;
   appHeroBannerStyle: string;
   appProductCardStyle: string;
+  activePage: Page;
 
   setFont: (font: string) => void;
   setButtonShape: (shape: ButtonShape) => void;
@@ -22,6 +24,7 @@ interface ThemeState {
   setCategoriesStyle: (style: string) => void;
   setHeroBannerStyle: (style: string) => void;
   setProductCardStyle: (style: string) => void;
+  setActivePage: (page: Page) => void;
 }
 
 const initialColors = colors_fields.reduce(
@@ -35,6 +38,7 @@ const initialColors = colors_fields.reduce(
 export const useThemeStore = create<ThemeState>()(
   persist(
     (set) => ({
+      activePage: "home",
       colors: initialColors,
       font: "Cairo",
       buttonShape: "rounded",
@@ -62,6 +66,8 @@ export const useThemeStore = create<ThemeState>()(
       setHeroBannerStyle: (appHeroBannerStyle) => set({ appHeroBannerStyle }),
 
       setProductCardStyle: (appProductCardStyle) => set({ appProductCardStyle }),
+      
+      setActivePage: (page) => set({ activePage: page }),
     }),
     {
       name: "theme-storage",

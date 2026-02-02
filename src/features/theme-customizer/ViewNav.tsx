@@ -1,16 +1,37 @@
-import { NavLink } from "react-router";
 import { useTranslation } from "react-i18next";
+import { useThemeStore } from "./theme-logic/appStore";
+import type { Page } from "./theme-logic/appStore";
 
 export default function ViewNav() {
   const { t } = useTranslation();
+  const { activePage, setActivePage } = useThemeStore();
 
   return (
     <div className="flex items-center justify-between py-4 px-10">
-      <div className="flex items-center gap-6">
-        <NavLink to="/" className="text-[#595959] text-[16px]">{t("customizer.home")}</NavLink>
-        <NavLink to="/categories" className="text-[#595959] text-[16px]">{t("customizer.categories")}</NavLink>
-        <NavLink to="/product-details" className="text-[#595959] text-[16px]">{t("customizer.product_details")}</NavLink>
-        <NavLink to="/cart" className="text-[#595959] text-[16px]">{t("customizer.cart")}</NavLink>
+      <div className="flex items-center gap-8">
+        {[
+          { id: "home", label: t("customizer.home") },
+          { id: "categories", label: t("customizer.categories") },
+          { id: "product-details", label: t("customizer.product_details") },
+          { id: "cart", label: t("customizer.cart") },
+        ].map((page) => (
+          <button
+            key={page.id}
+            className={`text-[16px] relative py-2 transition-colors duration-300 group cursor-pointer ${
+              activePage === page.id
+                ? "text-[#1A0F04]"
+                : "text-[#595959] hover:text-[#1A0F04]"
+            }`}
+            onClick={() => setActivePage(page.id as Page)}
+          >
+            {page.label}
+            <div
+              className={`absolute bottom-1 left-1/2 -translate-x-1/2 h-[2px] bg-[#0089C7] rounded-full transition-all duration-300 origin-center ${
+                activePage === page.id ? "w-full" : "w-0 group-hover:w-full"
+              }`}
+            />
+          </button>
+        ))}
       </div>
 
       <div className="flex items-center gap-2">
