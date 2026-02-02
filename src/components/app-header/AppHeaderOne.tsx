@@ -2,7 +2,11 @@ export default function AppHeaderOne() {
   return (
     <div className="flex items-center justify-between px-5 py-3 border-b border-gray-100">
       <div>
-        <img src="https://placehold.co/92x42?text=logo" alt="logo" className="rounded-[8px]" />
+        <img
+          src="https://placehold.co/92x42/f5f5f5/000000?text=logo"
+          alt="logo"
+          className="rounded-[8px]"
+        />
       </div>
 
       <div className="w-12 h-12 rounded-full bg-[#F5F5F5] flex items-center justify-center">

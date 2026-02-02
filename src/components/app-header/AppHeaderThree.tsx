@@ -3,7 +3,7 @@ export default function AppHeaderThree() {
     <div className="flex items-center justify-between px-5 py-3 border-b border-gray-100">
       <div>
         <img
-          src="https://placehold.co/92x42?text=logo"
+          src="https://placehold.co/92x42/f5f5f5/000000?text=logo"
           alt="logo"
           className="rounded-[8px]"
         />
