@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { useThemeStore } from "@/features/theme-customizer/theme-logic/appStore";
+import { useThemeStore } from "@/features/theme-customizer/appStore";
 import AppCategoriesOne from "@/components/app-categories/AppCategoriesOne";
 import AppCategoriesTwo from "@/components/app-categories/AppCategoriesTwo";
 import AppCategoriesThree from "@/components/app-categories/AppCategoriesThree";

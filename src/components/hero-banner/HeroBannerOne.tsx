@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useThemeStore } from "@/features/theme-customizer/theme-logic/appStore";
+import { useThemeStore } from "@/features/theme-customizer/appStore";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";

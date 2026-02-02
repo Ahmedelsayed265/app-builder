@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { useThemeStore } from "../theme-logic/appStore";
+import { useThemeStore } from "../appStore";
 import AppHeaderOne from "@/components/app-header/AppHeaderOne";
 import AppHeaderTwo from "@/components/app-header/AppHeaderTwo";
 import AppHeaderThree from "@/components/app-header/AppHeaderThree";

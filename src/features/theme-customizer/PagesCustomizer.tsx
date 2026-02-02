@@ -12,7 +12,7 @@ import AppCategories from "./theme-sections/AppCategories";
 import AppHeroBanner from "./theme-sections/AppHeroBanner";
 import AppProductCard from "./theme-sections/AppProductCard";
 
-export default function AppSections() {
+export default function PagesCustomizer() {
   const { t } = useTranslation();
 
   return (

@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode } from "swiper/modules";
-import { useThemeStore } from "@/features/theme-customizer/theme-logic/appStore";
+import { useThemeStore } from "@/features/theme-customizer/appStore";
 import "swiper/css";
 import "swiper/css/free-mode";
 
@@ -13,7 +13,9 @@ export default function AppCategoriesTwo() {
     <div className="flex flex-col gap-3 py-3 px-5">
       <div className="flex justify-between items-center px-1">
         <h3 className="text-[#161616] text-[16px] font-bold">التصنيفات</h3>
-        <button className="underline text-sm" style={{ color: colors.primary }}>عرض المزيد</button>
+        <button className="underline text-sm" style={{ color: colors.primary }}>
+          عرض المزيد
+        </button>
       </div>
 
       <div className="w-0 min-w-full overflow-hidden">

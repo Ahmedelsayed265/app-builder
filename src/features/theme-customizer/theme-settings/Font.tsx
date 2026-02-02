@@ -6,7 +6,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { useTranslation } from "react-i18next";
-import { useThemeStore } from "../theme-logic/appStore";
+import { useThemeStore } from "../appStore";
 
 const fonts = [
   { value: "Rubik", label: "Rubik" },

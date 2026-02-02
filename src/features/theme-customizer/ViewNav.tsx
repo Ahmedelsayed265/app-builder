@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
-import { useThemeStore } from "./theme-logic/appStore";
-import type { Page } from "./theme-logic/appStore";
+import { useThemeStore } from "./appStore";
+import type { Page } from "./appStore";
 
 export default function ViewNav() {
   const { t } = useTranslation();

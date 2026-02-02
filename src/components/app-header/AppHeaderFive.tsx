@@ -1,4 +1,4 @@
-import { useThemeStore } from "@/features/theme-customizer/theme-logic/appStore";
+import { useThemeStore } from "@/features/theme-customizer/appStore";
 
 export default function AppHeaderFive() {
   const { colors } = useThemeStore();
@@ -6,8 +6,14 @@ export default function AppHeaderFive() {
   return (
     <div className="flex items-center justify-between px-5 py-3 border-b border-gray-100">
       <div className="flex items-center gap-2">
-        <img src="https://placehold.co/100x100/F9F9F9/000000?text=avatar" alt="logo" className="h-12 w-12 rounded-full" />
-        <h6 className="text-[16px]" style={{ color: colors.primary }}>أهلا بك فى تطبيقنا</h6>
+        <img
+          src="https://placehold.co/100x100/F9F9F9/000000?text=avatar"
+          alt="logo"
+          className="h-12 w-12 rounded-full"
+        />
+        <h6 className="text-[16px]" style={{ color: colors.primary }}>
+          أهلا بك فى تطبيقنا
+        </h6>
       </div>
 
       <div className="w-12 h-12 rounded-full bg-[#F5F5F5] flex items-center justify-center">

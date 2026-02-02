@@ -1,4 +1,4 @@
-import { useThemeStore } from "@/features/theme-customizer/theme-logic/appStore";
+import { useThemeStore } from "@/features/theme-customizer/appStore";
 
 export default function BarOne({ className }: { className?: string }) {
   const { colors } = useThemeStore();

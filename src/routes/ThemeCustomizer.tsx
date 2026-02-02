@@ -1,4 +1,4 @@
-import AppSections from "@/features/theme-customizer/AppSections";
+import PagesCustomizer from "@/features/theme-customizer/PagesCustomizer";
 import PreviewApp from "@/features/theme-customizer/PreviewApp";
 import ThemeSettings from "@/features/theme-customizer/ThemeSettings";
 import ViewNav from "@/features/theme-customizer/ViewNav";
@@ -13,7 +13,7 @@ export default function ThemeCustomizer() {
 
         <div className="flex h-[calc(100vh-157px)]">
           <PreviewApp />
-          <AppSections />
+          <PagesCustomizer />
         </div>
       </section>
     </main>

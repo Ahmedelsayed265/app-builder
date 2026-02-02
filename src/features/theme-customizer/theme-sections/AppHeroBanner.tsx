@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { useThemeStore } from "@/features/theme-customizer/theme-logic/appStore";
+import { useThemeStore } from "@/features/theme-customizer/appStore";
 import HeroBannerOne from "@/components/hero-banner/HeroBannerOne";
 import HeroBannerTwo from "@/components/hero-banner/HeroBannerTwo";
 import HeroBannerThree from "@/components/hero-banner/HeroBannerThree";

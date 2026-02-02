@@ -1,5 +1,5 @@
-import { useThemeStore } from "./theme-logic/appStore";
-import MobileAppContent from "./MobileAppContent";
+import { useThemeStore } from "./appStore";
+import MobileAppContent from "./mobile-content/MobileAppContent";
 
 export default function PreviewApp() {
   const { colors } = useThemeStore();

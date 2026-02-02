@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { useThemeStore } from "../theme-logic/appStore";
+import { useThemeStore } from "../appStore";
 import ProductCardOne from "@/components/product-cards/ProductCardOne";
 import ProductCardTwo from "@/components/product-cards/ProductCardTwo";
 import ProductCardThree from "@/components/product-cards/ProductCardThree";

@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
-import { useThemeStore, type ButtonShape } from "../theme-logic/appStore";
+import { useThemeStore, type ButtonShape } from "../appStore";
 
 const shapes: { id: ButtonShape; label: string; radius: string }[] = [
   { id: "rounded", label: "rounded_button", radius: "rounded-full" },

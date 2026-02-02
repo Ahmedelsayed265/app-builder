@@ -1,6 +1,6 @@
 import { colors_fields } from "@/utils/constants";
 import { useTranslation } from "react-i18next";
-import { useThemeStore } from "../theme-logic/appStore";
+import { useThemeStore } from "../appStore";
 
 export default function Colors() {
   const { t } = useTranslation();

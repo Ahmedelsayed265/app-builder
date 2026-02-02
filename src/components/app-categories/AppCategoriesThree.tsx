@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode } from "swiper/modules";
-import { useThemeStore } from "@/features/theme-customizer/theme-logic/appStore";
+import { useThemeStore } from "@/features/theme-customizer/appStore";
 import "swiper/css";
 import "swiper/css/free-mode";
 
@@ -10,10 +10,12 @@ export default function AppCategoriesThree() {
   const { colors } = useThemeStore();
 
   return (
-       <div className="flex flex-col gap-3 py-3 px-5">
+    <div className="flex flex-col gap-3 py-3 px-5">
       <div className="flex justify-between items-center px-1">
         <h3 className="text-[#161616] text-[16px] font-bold">التصنيفات</h3>
-        <button className="underline text-sm" style={{ color: colors.primary }}>عرض المزيد</button>
+        <button className="underline text-sm" style={{ color: colors.primary }}>
+          عرض المزيد
+        </button>
       </div>
 
       <div className="w-0 min-w-full overflow-hidden">
@@ -28,7 +30,10 @@ export default function AppCategoriesThree() {
         >
           {CATEGORIES.map((cat) => (
             <SwiperSlide key={cat} className="w-fit!">
-              <div className="flex flex-col items-center gap-2 p-1 rounded-[8px]" style={{ backgroundColor: colors.secondary }}>
+              <div
+                className="flex flex-col items-center gap-2 p-1 rounded-[8px]"
+                style={{ backgroundColor: colors.secondary }}
+              >
                 <img
                   src="https://placehold.co/100x100/F9F9F9/000000"
                   alt="category"
@@ -47,5 +52,5 @@ export default function AppCategoriesThree() {
         </Swiper>
       </div>
     </div>
-  )
+  );
 }
