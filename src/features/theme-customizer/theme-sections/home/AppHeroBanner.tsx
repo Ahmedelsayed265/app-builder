@@ -29,7 +29,7 @@ export default function AppHeroBanner() {
         >
           <input
             type="radio"
-            name="header"
+            name="app-hero-banner"
             id={id}
             className="hidden"
             checked={appHeroBannerStyle === id}

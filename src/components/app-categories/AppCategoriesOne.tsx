@@ -36,7 +36,7 @@ export default function AppCategoriesOne() {
               >
                 <img
                   src="https://placehold.co/100x100/F9F9F9/000000"
-                  alt=""
+                  alt="category"
                   className="w-full h-full object-contain rounded-full border border-white"
                 />
 

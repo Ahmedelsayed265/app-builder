@@ -6,6 +6,7 @@ export type ButtonShape = "rounded" | "square" | "sharp";
 export type Page = "home" | "categories" | "product-details" | "cart";
 
 interface ThemeState {
+  activePage: Page;
   font: string;
   buttonShape: ButtonShape;
   colors: Record<string, string>;
@@ -14,8 +15,9 @@ interface ThemeState {
   appCategoriesStyle: string;
   appHeroBannerStyle: string;
   appProductCardStyle: string;
-  activePage: Page;
+  allCategoriesStyle: string;
 
+  setActivePage: (page: Page) => void;
   setFont: (font: string) => void;
   setButtonShape: (shape: ButtonShape) => void;
   setColor: (name: string, value: string) => void;
@@ -24,7 +26,7 @@ interface ThemeState {
   setCategoriesStyle: (style: string) => void;
   setHeroBannerStyle: (style: string) => void;
   setProductCardStyle: (style: string) => void;
-  setActivePage: (page: Page) => void;
+  setAllCategoriesStyle: (style: string) => void;
 }
 
 const initialColors = colors_fields.reduce(
@@ -47,6 +49,7 @@ export const useThemeStore = create<ThemeState>()(
       appCategoriesStyle: "",
       appHeroBannerStyle: "",
       appProductCardStyle: "",
+      allCategoriesStyle: "",
 
       setColor: (name, value) =>
         set((state) => ({
@@ -68,6 +71,8 @@ export const useThemeStore = create<ThemeState>()(
       setProductCardStyle: (appProductCardStyle) => set({ appProductCardStyle }),
       
       setActivePage: (page) => set({ activePage: page }),
+
+      setAllCategoriesStyle: (allCategoriesStyle) => set({ allCategoriesStyle }),
     }),
     {
       name: "theme-storage",

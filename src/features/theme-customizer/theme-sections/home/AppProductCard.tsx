@@ -29,7 +29,7 @@ export default function AppProductCard() {
         >
           <input
             type="radio"
-            name="header"
+            name="app-product-card"
             id={id}
             className="hidden"
             checked={appProductCardStyle === id}

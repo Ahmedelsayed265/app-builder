@@ -4,6 +4,7 @@ import BarTwo from "@/components/app-bar/BarTwo";
 import BarThree from "@/components/app-bar/BarThree";
 import BarFour from "@/components/app-bar/BarFour";
 import HomePage from "./HomePage";
+import CategoriesPage from "./CategoriesPage";
 
 export default function MobileAppContent() {
   const { appBarStyle, font, activePage } = useThemeStore();
@@ -14,6 +15,7 @@ export default function MobileAppContent() {
       style={{ fontFamily: `"${font}", sans-serif` }}
     >
       {activePage === "home" && <HomePage />}
+      {activePage === "categories" && <CategoriesPage />}
 
       <div className="h-20" />
 

@@ -31,7 +31,7 @@ export default function AppCategories() {
         >
           <input
             type="radio"
-            name="header"
+            name="app-categories"
             id={id}
             className="hidden"
             checked={appCategoriesStyle === id}

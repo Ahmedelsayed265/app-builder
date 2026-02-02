@@ -1,6 +1,12 @@
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { useTranslation } from "react-i18next";
+import AllCategoriesStyle from "../theme-sections/categories/AllCategoriesStyle";
 
 export default function CategoriesPageCustomizer() {
   const { t } = useTranslation();
@@ -24,8 +30,8 @@ export default function CategoriesPageCustomizer() {
         </AccordionTrigger>
 
         <AccordionContent className="flex flex-col gap-4 px-4 py-2 min-w-0">
-          <ScrollArea className="h-full w-full pl-4 min-w-0">
-           
+          <ScrollArea className="h-[60vh] w-full pl-4 min-w-0">
+            <AllCategoriesStyle />
           </ScrollArea>
         </AccordionContent>
       </AccordionItem>

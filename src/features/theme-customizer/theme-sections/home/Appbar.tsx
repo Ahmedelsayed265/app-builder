@@ -31,7 +31,7 @@ export default function AppBar() {
         >
           <input
             type="radio"
-            name="bar"
+            name="app-bar"
             id={id}
             className="hidden"
             checked={appBarStyle === id}

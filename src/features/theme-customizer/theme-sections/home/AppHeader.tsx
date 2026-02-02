@@ -33,7 +33,7 @@ export default function AppHeader() {
         >
           <input
             type="radio"
-            name="header"
+            name="app-header"
             id={id}
             className="hidden"
             checked={appHeaderStyle === id}
