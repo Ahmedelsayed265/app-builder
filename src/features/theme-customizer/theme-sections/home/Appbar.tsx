@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { useThemeStore } from "../appStore";
+import { useThemeStore } from "../../appStore";
 import BarOne from "@/components/app-bar/BarOne";
 import BarTwo from "@/components/app-bar/BarTwo";
 import BarThree from "@/components/app-bar/BarThree";
