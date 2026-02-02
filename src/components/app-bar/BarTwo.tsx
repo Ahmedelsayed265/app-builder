@@ -3,7 +3,7 @@ import { useThemeStore } from "@/features/theme-customizer/theme-logic/appStore"
 export default function BarTwo() {
   const { colors } = useThemeStore();
   return (
-    <div className="py-3 px-4 flex items-center justify-between gap-2">
+    <div className="py-2 px-4 flex items-center justify-between gap-2">
       <div
         className="h-14 w-14 rounded-[24px] flex items-center justify-center"
         style={{ backgroundColor: colors.primary }}
