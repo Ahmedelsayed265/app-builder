@@ -25,16 +25,16 @@ export default function ProductCardOne() {
         >
           <SwiperSlide>
             <img
-              src="/p1.jpg"
+              src="https://placehold.co/200x250/F9F9F9/000000"
               alt="p1"
-              className="w-full h-full rounded-lg aspect-3/4 object-cover"
+              className="w-full h-full rounded-lg object-cover"
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src="/p2.png"
+              src="https://placehold.co/200x250/F9F9F9/000000"
               alt="p2"
-              className="w-full h-full rounded-lg aspect-3/4 object-cover"
+              className="w-full h-full rounded-lg object-cover"
             />
           </SwiperSlide>
         </Swiper>

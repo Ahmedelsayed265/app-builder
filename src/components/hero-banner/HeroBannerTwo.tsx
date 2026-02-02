@@ -5,8 +5,8 @@ import "swiper/css/pagination";
 
 export default function HeroBannerTwo() {
   const banners = [
-    "https://placehold.co/1200x600/1e293b/f8fafc?text=Modern+Collection",
-    "https://placehold.co/1200x600/334155/f8fafc?text=New+Arrivals",
+    "https://placehold.co/1200x600/F9F9F9/000000?text=Banner+Content+1",
+    "https://placehold.co/1200x600/F9F9F9/000000?text=Banner+Content+2",
   ];
 
   return (
@@ -20,7 +20,10 @@ export default function HeroBannerTwo() {
         dir="rtl"
       >
         {banners.map((url, index) => (
-          <SwiperSlide key={index} className="w-full h-full rounded-[8px] overflow-hidden">
+          <SwiperSlide
+            key={index}
+            className="w-full h-full rounded-[8px] overflow-hidden"
+          >
             <img
               src={url}
               alt={`banner-${index}`}

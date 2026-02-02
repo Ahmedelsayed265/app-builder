@@ -5,7 +5,7 @@ export const colors_fields = [
   },
   {
     field: "secondary",
-    default: "#D8D8D8",
+    default: "#ededed",
   },
   {
     field: "app_bg",

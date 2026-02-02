@@ -33,7 +33,7 @@ export default function AppCategoriesFour() {
                 style={{ backgroundColor: colors.secondary }}
               >
                 <img
-                  src="https://placehold.co/200x200/000000/FFFFFF"
+                  src="https://placehold.co/100x100/F9F9F9/000000"
                   alt=""
                   className="w-full h-full object-contain rounded-[8px] border border-white"
                 />

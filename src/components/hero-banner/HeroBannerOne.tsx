@@ -10,9 +10,9 @@ export default function HeroBannerOne() {
   const [paginationEl, setPaginationEl] = useState<HTMLDivElement | null>(null);
 
   const banners = [
-    "https://placehold.co/1200x600/f3f4f6/1f2937?text=Banner+Content+1",
-    "https://placehold.co/1200x600/e5e7eb/374151?text=Banner+Content+2",
-    "https://placehold.co/1200x600/d1d5db/4b5563?text=Banner+Content+3",
+    "https://placehold.co/1200x600/F9F9F9/000000?text=Banner+Content+1",
+    "https://placehold.co/1200x600/F9F9F9/000000?text=Banner+Content+2",
+    "https://placehold.co/1200x600/F9F9F9/000000?text=Banner+Content+3",
   ];
 
   return (

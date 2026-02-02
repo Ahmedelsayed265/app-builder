@@ -30,7 +30,7 @@ export default function AppCategoriesTwo() {
             <SwiperSlide key={cat} className="w-fit!">
               <div className="flex flex-col items-center gap-2 ">
                 <img
-                  src="https://placehold.co/200x200/000000/FFFFFF"
+                  src="https://placehold.co/100x100/F9F9F9/000000"
                   alt="category"
                   className="w-[100px] h-[100px] object-cover rounded-full"
                 />

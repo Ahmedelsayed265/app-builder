@@ -30,7 +30,7 @@ export default function AppCategoriesThree() {
             <SwiperSlide key={cat} className="w-fit!">
               <div className="flex flex-col items-center gap-2 p-1 rounded-[8px]" style={{ backgroundColor: colors.secondary }}>
                 <img
-                  src="https://placehold.co/200x200/000000/FFFFFF"
+                  src="https://placehold.co/100x100/F9F9F9/000000"
                   alt="category"
                   className="w-[82px] h-[50px] object-cover rounded-[8px] border border-white"
                 />

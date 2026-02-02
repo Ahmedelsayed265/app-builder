@@ -10,9 +10,9 @@ export default function ProductCardThree() {
     >
       <div className="flex items-center gap-2 relative">
         <img
-          src="/p1.jpg"
+          src="https://placehold.co/200x250/F9F9F9/000000"
           alt="p1"
-          className="w-full h-full rounded-lg aspect-3/4 object-cover"
+          className="w-full h-full rounded-lg object-cover"
         />
 
         <button
