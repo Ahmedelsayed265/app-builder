@@ -4,7 +4,7 @@ export default function CartStyleFour() {
   const { colors } = useThemeStore();
 
   return (
-    <div className="bg-white p-2 flex flex-col gap-3">
+    <div className="bg-white p-2 flex flex-col gap-3 rounded-[8px]">
       <div className="flex items-center gap-2">
         <img
           src="https://placehold.co/100x100/eeeeee/31343C"
@@ -14,7 +14,6 @@ export default function CartStyleFour() {
 
         <div className="flex flex-col gap-2">
           <h3 className="text-lg font-medium">اسم المنتج</h3>
-
           <p className="text-[#666666]">اللون:Beige</p>
           <p className="text-[#666666]">المقاس:M</p>
         </div>

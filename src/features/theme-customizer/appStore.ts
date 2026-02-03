@@ -17,6 +17,7 @@ interface ThemeState {
   appProductCardStyle: string;
   allCategoriesStyle: string;
   cartStyle: string;
+  productDetailsStyle: string;
 
   setActivePage: (page: Page) => void;
   setFont: (font: string) => void;
@@ -29,6 +30,7 @@ interface ThemeState {
   setProductCardStyle: (style: string) => void;
   setAllCategoriesStyle: (style: string) => void;
   setCartStyle: (style: string) => void;
+  setProductDetailsStyle: (style: string) => void;
 }
 
 const initialColors = colors_fields.reduce(
@@ -53,6 +55,7 @@ export const useThemeStore = create<ThemeState>()(
       appProductCardStyle: "",
       allCategoriesStyle: "",
       cartStyle: "cart-style-one",
+      productDetailsStyle: "product-details-style-one",
 
       setColor: (name, value) =>
         set((state) => ({
@@ -71,13 +74,18 @@ export const useThemeStore = create<ThemeState>()(
 
       setHeroBannerStyle: (appHeroBannerStyle) => set({ appHeroBannerStyle }),
 
-      setProductCardStyle: (appProductCardStyle) => set({ appProductCardStyle }),
-      
+      setProductCardStyle: (appProductCardStyle) =>
+        set({ appProductCardStyle }),
+
       setActivePage: (page) => set({ activePage: page }),
 
-      setAllCategoriesStyle: (allCategoriesStyle) => set({ allCategoriesStyle }),
+      setAllCategoriesStyle: (allCategoriesStyle) =>
+        set({ allCategoriesStyle }),
 
       setCartStyle: (cartStyle) => set({ cartStyle }),
+
+      setProductDetailsStyle: (productDetailsStyle) =>
+        set({ productDetailsStyle }),
     }),
     {
       name: "theme-storage",

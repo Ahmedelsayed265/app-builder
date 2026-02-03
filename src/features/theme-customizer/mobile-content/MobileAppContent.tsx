@@ -6,6 +6,7 @@ import BarFour from "@/components/app-bar/BarFour";
 import HomePage from "./HomePage";
 import CartPage from "./CartPage";
 import CategoriesPage from "./CategoriesPage";
+import ProductStylePage from "./ProductStylePage";
 
 export default function MobileAppContent() {
   const { appBarStyle, font, activePage } = useThemeStore();
@@ -18,6 +19,7 @@ export default function MobileAppContent() {
       {activePage === "home" && <HomePage />}
       {activePage === "categories" && <CategoriesPage />}
       {activePage === "cart" && <CartPage />}
+      {activePage === "product-details" && <ProductStylePage />}
 
       <div className="h-20" />
 

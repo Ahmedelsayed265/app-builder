@@ -4,10 +4,10 @@ export default function CartStyleTwo() {
   const { colors } = useThemeStore();
 
   return (
-      <div className="bg-white p-2 flex items-center gap-2 relative">
+      <div className="bg-white p-2 flex items-center gap-2 relative rounded-[8px]">
       <img
         src="https://placehold.co/100x100/eeeeee/31343C"
-        className="w-26 h-26 object-cover rounded"
+        className="w-24 h-24 object-cover rounded"
         alt="cart-product"
       />
 

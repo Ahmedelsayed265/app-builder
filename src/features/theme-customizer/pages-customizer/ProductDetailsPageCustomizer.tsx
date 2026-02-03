@@ -6,6 +6,7 @@ import {
 } from "@/components/ui/accordion";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { useTranslation } from "react-i18next";
+import ProductDetailsStyles from "../theme-sections/product-details/ProductDetailsStyles";
 
 export default function ProductDetailsPageCustomizer() {
   const { t } = useTranslation();
@@ -30,7 +31,7 @@ export default function ProductDetailsPageCustomizer() {
 
         <AccordionContent className="flex flex-col gap-4 px-4 py-2 min-w-0">
           <ScrollArea className="h-[60vh] w-full pl-4 min-w-0">
-            
+            <ProductDetailsStyles />
           </ScrollArea>
         </AccordionContent>
       </AccordionItem>

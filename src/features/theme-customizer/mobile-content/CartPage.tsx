@@ -8,8 +8,8 @@ export default function CartPage() {
   const { cartStyle, colors } = useThemeStore();
 
   return (
-    <div className="p-5 flex flex-col gap-5">
-      <div className="flex flex-col">
+    <div className="p-5 flex flex-col gap-5 ">
+      <div className="flex flex-col gap-2">
         {Array.from({ length: 3 }).map((_, index) => (
           <>
             {cartStyle === "cart-style-one" && <CartStyleOne key={index} />}
