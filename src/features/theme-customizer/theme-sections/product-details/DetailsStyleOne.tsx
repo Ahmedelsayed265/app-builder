@@ -18,7 +18,7 @@ export default function DetailsStyleOne() {
       </div>
 
       <div className="flex flex-col gap-2">
-        <div className="w-full max-w-[420px] mx-auto overflow-hidden relative">
+        <div className="w-full max-w-[400px] mx-auto overflow-hidden relative">
           <div className="absolute top-2 right-2 z-10 flex flex-col gap-2">
             <button className="w-8 h-8 rounded-full bg-white flex items-center justify-center">
               <img src="/heart.svg" alt="heart" />
