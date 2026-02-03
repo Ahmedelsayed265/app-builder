@@ -71,6 +71,8 @@
     "product_card": "شكل كارد المنتج",
     "bottom_bar": "شكل البار السفلى",
     "categories_customizer": "واجهة صفحة التصنيفات",
-    "available_shapes": "الأشكال المتاحة"
+    "available_shapes": "الأشكال المتاحة",
+    "product_details_customizer": "واجهة صفحة تفاصيل المنتج",
+    "cart_customizer": "واجهة صفحة السلة"
   }
 }

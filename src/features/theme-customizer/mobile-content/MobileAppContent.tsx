@@ -4,6 +4,7 @@ import BarTwo from "@/components/app-bar/BarTwo";
 import BarThree from "@/components/app-bar/BarThree";
 import BarFour from "@/components/app-bar/BarFour";
 import HomePage from "./HomePage";
+import CartPage from "./CartPage";
 import CategoriesPage from "./CategoriesPage";
 
 export default function MobileAppContent() {
@@ -16,6 +17,7 @@ export default function MobileAppContent() {
     >
       {activePage === "home" && <HomePage />}
       {activePage === "categories" && <CategoriesPage />}
+      {activePage === "cart" && <CartPage />}
 
       <div className="h-20" />
 

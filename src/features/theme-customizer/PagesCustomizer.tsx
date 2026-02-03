@@ -2,6 +2,8 @@ import { useTranslation } from "react-i18next";
 import { useThemeStore } from "./appStore";
 import HomePageCustomizer from "./pages-customizer/HomePageCustomizer";
 import CategoriesPageCustomizer from "./pages-customizer/CategoriesPageCustomizer";
+import ProductDetailsPageCustomizer from "./pages-customizer/ProductDetailsPageCustomizer";
+import CartPageCustomizer from "./pages-customizer/CartPageCustomizer";
 
 export default function PagesCustomizer() {
   const { t } = useTranslation();
@@ -18,11 +20,16 @@ export default function PagesCustomizer() {
           <img src="/app.svg" alt="sidebar-left" />
           {activePage === "home" && t("customizer.app_sections")}
           {activePage === "categories" && t("customizer.categories_customizer")}
+          {activePage === "product-details" &&
+            t("customizer.product_details_customizer")}
+          {activePage === "cart" && t("customizer.cart_customizer")}
         </h1>
       </div>
 
       {activePage === "home" && <HomePageCustomizer />}
       {activePage === "categories" && <CategoriesPageCustomizer />}
+      {activePage === "product-details" && <ProductDetailsPageCustomizer />}
+      {activePage === "cart" && <CartPageCustomizer />}
     </div>
   );
 }

@@ -15,7 +15,7 @@ export default function CategoriesStyleFive() {
               }`}
             >
               <img
-                src={`https://placehold.co/200x300/fafafa/31343C`}
+                src="https://placehold.co/200x300/fafafa/31343C"
                 alt={`تصنيف ${index + 1}`}
                 className="w-full h-full object-cover transition duration-300 group-hover:scale-105"
               />
