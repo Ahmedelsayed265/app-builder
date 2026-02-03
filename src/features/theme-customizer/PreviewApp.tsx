@@ -15,7 +15,12 @@ export default function PreviewApp() {
 
         <div
           className="absolute inset-0 w-full h-full z-10 overflow-hidden rounded-[44px]"
-          style={{ backgroundColor: colors.app_bg }}
+          style={
+            {
+              backgroundColor: colors.app_bg,
+              "--primary-color": colors.primary,
+            } as React.CSSProperties
+          }
         >
           <div className="w-full h-full overflow-y-auto scrollbar-hide pt-[44px] pb-[20px]">
             <MobileAppContent />
