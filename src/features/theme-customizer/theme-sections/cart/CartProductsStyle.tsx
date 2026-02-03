@@ -3,6 +3,7 @@ import { useThemeStore } from "../../appStore";
 import CartStyleOne from "./CartStyleOne";
 import CartStyleTwo from "./CartStyleTwo";
 import CartStyleThree from "./CartStyleThree";
+import CartStyleFour from "./CartStyleFour";
 
 export default function CartProductsStyle() {
   const { cartStyle, setCartStyle } = useThemeStore();
@@ -11,6 +12,7 @@ export default function CartProductsStyle() {
     { id: "cart-style-one", Component: CartStyleOne },
     { id: "cart-style-two", Component: CartStyleTwo },
     { id: "cart-style-three", Component: CartStyleThree },
+    { id: "cart-style-four", Component: CartStyleFour },
   ];
 
   return (

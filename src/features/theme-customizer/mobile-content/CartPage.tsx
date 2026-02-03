@@ -1,4 +1,5 @@
 import { useThemeStore } from "../appStore";
+import CartStyleFour from "../theme-sections/cart/CartStyleFour";
 import CartStyleOne from "../theme-sections/cart/CartStyleOne";
 import CartStyleThree from "../theme-sections/cart/CartStyleThree";
 import CartStyleTwo from "../theme-sections/cart/CartStyleTwo";
@@ -14,6 +15,7 @@ export default function CartPage() {
             {cartStyle === "cart-style-one" && <CartStyleOne key={index} />}
             {cartStyle === "cart-style-two" && <CartStyleTwo key={index} />}
             {cartStyle === "cart-style-three" && <CartStyleThree key={index} />}
+            {cartStyle === "cart-style-four" && <CartStyleFour key={index} />}
           </>
         ))}
       </div>
@@ -30,7 +32,7 @@ export default function CartPage() {
           <div className="border border-gray-200 rounded-full flex items-center justify-between ps-3">
             <p className="text-gray-500">أدخل كود الخصم</p>
             <button
-              className="bg-primary text-white py-3 px-6 rounded-full"
+              className="bg-primary text-white py-3 px-7 rounded-full"
               style={{ backgroundColor: colors.primary }}
             >
               تطبيق
