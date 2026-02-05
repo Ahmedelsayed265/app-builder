@@ -11,27 +11,35 @@ const categories = [
 export default function CategoriesStyleFour() {
   return (
     <div className="p-4" dir="rtl">
-      <h3 className="text-xl font-bold text-center mb-6">جميع التصنيفات</h3>
+      <h3 className="text-2xl font-bold text-center mb-8 text-[#1A1A1A]">
+        جميع التصنيفات
+      </h3>
 
-      <div className="grid grid-cols-2 gap-3 auto-rows-[130px]">
+      <div className="grid grid-cols-2 gap-4 auto-rows-[140px]">
         {categories.map((item, index) => (
           <div
             key={index}
-            className={`relative row-span-${item.span} rounded-[4px] overflow-hidden group`}
+            className={`relative rounded-lg overflow-hidden group shadow-sm bg-[#C5C5C5] ${
+              item.span === 2 ? "row-span-2" : "row-span-1"
+            }`}
           >
             <img
-              src={`https://placehold.co/${item.img}/fafafa/31343C`}
+              src={`https://placehold.co/${item.img}/C5C5C5/4A4A4A?text=${item.img.replace("x", " × ")}`}
               alt={item.title}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover opacity-60"
             />
 
-            <div className="absolute inset-2 border border-white/40 pointer-events-none z-10" />
+            {/* Inset Border */}
+            <div className="absolute inset-2 border border-white/40 rounded-md pointer-events-none z-10" />
 
-            <div className="absolute inset-0 bg-black/20" />
+            {/* Text Overlay */}
+            <div className="absolute inset-0 flex flex-col items-center justify-center z-20 text-center px-2 pt-8">
+              <h4 className="text-white text-base font-bold drop-shadow-sm">
+                {item.title}
+              </h4>
+            </div>
 
-            <h3 className="absolute bottom-4 right-4 text-white text-sm font-medium z-20 drop-shadow-md">
-              {item.title}
-            </h3>
+            <div className="absolute inset-0 bg-black/5 group-hover:bg-black/10 transition-colors duration-300" />
           </div>
         ))}
       </div>
