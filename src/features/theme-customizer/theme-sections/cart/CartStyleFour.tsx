@@ -4,7 +4,7 @@ export default function CartStyleFour() {
   const { colors } = useThemeStore();
 
   return (
-    <div className="bg-white p-2 flex flex-col gap-3 rounded-[8px]">
+    <div className="bg-white p-2 flex flex-col gap-3 rounded-[8px] relative">
       <div className="flex items-center gap-2">
         <img
           src="https://placehold.co/100x100/eeeeee/31343C"
@@ -91,6 +91,10 @@ export default function CartStyleFour() {
           </p>
         </div>
       </div>
+
+      <button className="absolute top-2 left-2 cursor-pointer">
+        <img src="/delete.svg" alt="delete" />
+      </button>
     </div>
   );
 }

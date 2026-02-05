@@ -15,11 +15,11 @@ export default function CategoriesStyleFour() {
         جميع التصنيفات
       </h3>
 
-      <div className="grid grid-cols-2 gap-4 auto-rows-[140px]">
+      <div className="grid grid-cols-2 gap-2 auto-rows-[140px]">
         {categories.map((item, index) => (
           <div
             key={index}
-            className={`relative rounded-lg overflow-hidden group shadow-sm bg-[#C5C5C5] ${
+            className={`relative rounded-[8px] overflow-hidden group bg-[#C5C5C5] ${
               item.span === 2 ? "row-span-2" : "row-span-1"
             }`}
           >
@@ -30,7 +30,7 @@ export default function CategoriesStyleFour() {
             />
 
             {/* Inset Border */}
-            <div className="absolute inset-2 border border-white/40 rounded-md pointer-events-none z-10" />
+            <div className="absolute inset-2 border border-white/40 rounded-[8px] pointer-events-none z-10" />
 
             {/* Text Overlay */}
             <div className="absolute inset-0 flex flex-col items-center justify-center z-20 text-center px-2 pt-8">
