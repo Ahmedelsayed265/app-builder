@@ -21,6 +21,7 @@ const fonts = [
   { value: "Noto Naskh Arabic", label: "Noto Naskh Arabic" },
   { value: "El Messiri", label: "El Messiri" },
   { value: "Mada", label: "Mada" },
+  { value: "Baloo Bhaijaan 2", label: "Baloo Bhaijaan 2" },
 ];
 
 export default function Font() {
