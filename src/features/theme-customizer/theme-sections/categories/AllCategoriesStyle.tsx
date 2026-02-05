@@ -4,7 +4,6 @@ import CategoriesStyleOne from "./CategoriesStyleOne";
 import CategoriesStyleTwo from "./CategoriesStyleTwo";
 import CategoriesStyleThree from "./CategoriesStyleThree";
 import CategoriesStyleFour from "./CategoriesStyleFour";
-import CategoriesStyleFive from "./CategoriesStyleFive";
 import CategoriesStyleSix from "./CategoriesStyleSix";
 
 export default function AllCategoriesStyle() {
@@ -15,7 +14,6 @@ export default function AllCategoriesStyle() {
     { id: "style2", Component: CategoriesStyleTwo },
     { id: "style3", Component: CategoriesStyleThree },
     { id: "style4", Component: CategoriesStyleFour },
-    { id: "style5", Component: CategoriesStyleFive },
     { id: "style6", Component: CategoriesStyleSix },
   ];
 

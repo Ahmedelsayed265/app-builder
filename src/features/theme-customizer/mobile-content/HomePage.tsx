@@ -9,12 +9,11 @@ import AppHeaderFour from "@/components/app-header/AppHeaderFour";
 import AppHeaderOne from "@/components/app-header/AppHeaderOne";
 import AppHeaderThree from "@/components/app-header/AppHeaderThree";
 import AppHeaderTwo from "@/components/app-header/AppHeaderTwo";
-import HeroBannerOne from "@/components/hero-banner/HeroBannerOne";
-import HeroBannerThree from "@/components/hero-banner/HeroBannerThree";
-import HeroBannerTwo from "@/components/hero-banner/HeroBannerTwo";
 import ProductCardOne from "@/components/product-cards/ProductCardOne";
 import ProductCardThree from "@/components/product-cards/ProductCardThree";
 import ProductCardTwo from "@/components/product-cards/ProductCardTwo";
+import HeroBannerOne from "@/components/hero-banner/HeroBannerOne";
+import HeroBannerTwo from "@/components/hero-banner/HeroBannerTwo";
 
 export default function HomePage() {
   const {
@@ -35,7 +34,6 @@ export default function HomePage() {
 
       {appHeroBannerStyle === "banner-one" && <HeroBannerOne />}
       {appHeroBannerStyle === "banner-two" && <HeroBannerTwo />}
-      {appHeroBannerStyle === "banner-three" && <HeroBannerThree />}
 
       {appCategoriesStyle === "categories-one" && <AppCategoriesOne />}
       {appCategoriesStyle === "categories-two" && <AppCategoriesTwo />}

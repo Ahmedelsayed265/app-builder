@@ -2,7 +2,6 @@ import { cn } from "@/lib/utils";
 import { useThemeStore } from "@/features/theme-customizer/appStore";
 import HeroBannerOne from "@/components/hero-banner/HeroBannerOne";
 import HeroBannerTwo from "@/components/hero-banner/HeroBannerTwo";
-import HeroBannerThree from "@/components/hero-banner/HeroBannerThree";
 
 export default function AppHeroBanner() {
   const { appHeroBannerStyle, setHeroBannerStyle } = useThemeStore();
@@ -10,7 +9,6 @@ export default function AppHeroBanner() {
   const options = [
     { id: "banner-one", Component: HeroBannerOne },
     { id: "banner-two", Component: HeroBannerTwo },
-    { id: "banner-three", Component: HeroBannerThree },
   ];
 
   return (
