@@ -18,7 +18,6 @@ export default function ThemeCustomizer() {
           className="flex h-[calc(100vh-157px)]"
           style={
             {
-              backgroundColor: colors.app_bg,
               "--primary-color": colors.primary,
             } as React.CSSProperties
           }
